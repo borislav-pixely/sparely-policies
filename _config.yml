@@ -1,0 +1,6 @@
+# GitHub Pages configuration for the Sparely public site.
+#
+# This repository exists to serve the two pages App Store Connect requires —
+# a Privacy Policy URL and a Support URL — plus a small index that links them.
+title: Sparely
+description: A personal-finance ledger for iPhone and iPad.

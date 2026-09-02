@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sparely — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1c1c1e; --muted: #6b6b70; --bg: #fbfbfd; --rule: #e3e3e8; --link: #0a62c4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #f2f2f7; --muted: #a1a1a8; --bg: #131316; --rule: #2c2c31; --link: #6fb0ff; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.2rem; margin: 2.5rem 0 .5rem; letter-spacing: -.01em; }
+  .updated { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+  .lede { font-size: 1.1rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--link); }
+  footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Sparely Privacy Policy</h1>
+<p class="updated">Last updated: 2 September 2026</p>
+
+<p class="lede">Sparely does not collect your data. There is no Sparely server, no account to
+create, no analytics, no advertising and no third-party tracking of any kind. Everything you
+record stays on your device and in your own private iCloud.</p>
+
+<h2>What Sparely stores, and where</h2>
+<p>Sparely is a personal-finance ledger. The entries, amounts, accounts, labels, templates and
+preferences you create are written to a database on your device. If you are signed in to iCloud
+and iCloud Drive is enabled, that database is also synced to the private CloudKit database of
+<em>your own</em> Apple Account, so it is backed up and available on your other devices.</p>
+<p>That iCloud copy belongs to you. It sits in your Apple Account, under Apple's terms and
+Apple's encryption, in transit and at rest. The developer of Sparely has no access to it and no
+way to read it. Apple does not give the developer your ledger, your identity or your usage.</p>
+
+<h2>Data the developer collects: none</h2>
+<p>Sparely has no back-end. There is no server operated by the developer that your data is sent
+to, and no place where it could be stored, sold or shared. Concretely, Sparely contains:</p>
+<ul>
+  <li>no analytics or product-measurement SDK;</li>
+  <li>no crash-reporting or diagnostics SDK;</li>
+  <li>no advertising SDK, ad identifiers and no advertising of any kind;</li>
+  <li>no third-party tracking, and no tracking across apps or websites owned by other companies,
+      so Sparely never presents an App Tracking Transparency prompt;</li>
+  <li>no third-party dependencies at all.</li>
+</ul>
+<p>This is why Sparely's App Store privacy label is <strong>Data Not Collected</strong>, with
+<strong>Tracking: No</strong>. No financial information, identifiers, contacts, usage data or
+diagnostics are collected, and none are linked to you.</p>
+
+<h2>The one network request Sparely makes</h2>
+<p>When you use more than one currency, Sparely fetches a table of daily exchange rates so it can
+convert between them. It asks <a href="https://www.exchangerate-api.com">ExchangeRate-API</a>
+(<code>open.er-api.com</code>) and, if that is unavailable,
+<a href="https://frankfurter.dev">Frankfurter</a> (<code>api.frankfurter.dev</code>), which
+republishes the European Central Bank's daily reference rates.</p>
+<p>These requests carry no personal data: they ask for the public rate table for a base currency
+and nothing else. No entry, amount, account name, identifier or device identifier is sent. As
+with any request to any website, the provider necessarily sees the network address it came from;
+neither provider is used for tracking, and neither receives anything that identifies you or your
+ledger. The rates are cached on device, so the request happens at most once a day.</p>
+
+<h2>Sharing with other people</h2>
+<p>Sparely can let you share an account with someone else using Apple's CloudKit sharing — for
+example, a household budget shared with a partner. Sharing only ever happens because you started
+it, by sending an invitation from inside the app.</p>
+<p>When you share, the person who accepts the invitation can see the shared account and the
+entries in it, including their amounts, dates, categories, labels and notes, and — depending on
+the permission you grant — can add, edit or delete entries in it. They cannot see anything you
+have not shared: your other accounts, your other entries and your preferences remain private to
+you.</p>
+<p>The share is carried by Apple's CloudKit. The developer is not a participant and cannot read
+it. If you stop sharing, or remove a participant, CloudKit withdraws their access and the shared
+records are removed from their devices; copies they made outside Sparely, such as an export, are
+of course beyond the app's reach. If someone shares an account with <em>you</em>, that data
+belongs to them, and they can revoke your access at any time in the same way.</p>
+
+<h2>Deleting everything</h2>
+<p>You can delete all of your data from inside the app: <strong>Settings → Manage Data → Delete
+all data</strong>. It permanently deletes the entries, accounts, labels and templates you own,
+from this device and from your iCloud copy, and resets your preferences. It cannot be undone.
+Data owned by someone else and shared with you is not deleted by this — only its owner can delete
+it — but you can leave a share you were invited to.</p>
+<p>Deleting the app itself removes the on-device copy. To remove the iCloud copy as well, use
+Delete all data before deleting the app, or remove Sparely's iCloud data in the Settings app under
+your Apple Account.</p>
+
+<h2>Children</h2>
+<p>Sparely is not directed at children and collects nothing from anyone, of any age.</p>
+
+<h2>Changes to this policy</h2>
+<p>If a future version of Sparely ever collects anything, this page, the App Store privacy label
+and the privacy text inside the app will be updated together, before that version ships. The date
+at the top of this page tells you when it last changed.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:sparelysupport@icloud.com">sparelysupport@icloud.com</a>.
+See also the <a href="support.html">support page</a>.</p>
+
+<footer>Sparely — a personal-finance ledger for iPhone and iPad.</footer>
+
+</main>
+</body>
+</html>
