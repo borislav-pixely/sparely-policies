@@ -27,20 +27,29 @@
 <main>
 
 <h1>Sparely Privacy Policy</h1>
-<p class="updated">Last updated: 2 September 2026</p>
+<p class="updated">Last updated: 2 November 2026</p>
 
 <p class="lede">Sparely does not collect your data. There is no Sparely server, no account to
 create, no analytics, no advertising and no third-party tracking of any kind. Everything you
-record stays on your device and in your own private iCloud.</p>
+record stays on your device and in your own private cloud storage: iCloud on iPhone and iPad,
+and your Google account's backup on Android.</p>
 
 <h2>What Sparely stores, and where</h2>
 <p>Sparely is a personal-finance ledger. The entries, amounts, accounts, labels, templates and
-preferences you create are written to a database on your device. If you are signed in to iCloud
-and iCloud Drive is enabled, that database is also synced to the private CloudKit database of
-<em>your own</em> Apple Account, so it is backed up and available on your other devices.</p>
+preferences you create are written to a database on your device.</p>
+<p>On iPhone and iPad, if you are signed in to iCloud and iCloud Drive is enabled, that database
+is also synced to the private CloudKit database of <em>your own</em> Apple Account, so it is
+backed up and available on your other devices.</p>
 <p>That iCloud copy belongs to you. It sits in your Apple Account, under Apple's terms and
 Apple's encryption, in transit and at rest. The developer of Sparely has no access to it and no
 way to read it. Apple does not give the developer your ledger, your identity or your usage.</p>
+<p>On Android there is no sync. If backup is turned on for your device, Android's Auto Backup
+saves a copy of that database and your preferences to <em>your own</em> Google account, under
+Google's terms and encryption, and can restore it when you set up a new device. That copy belongs
+to you. The developer of Sparely has no access to it and no way to read it. You can turn it off
+in your device's backup settings.</p>
+<p>Your App Lock PIN is never included in an Android backup. It is stored encrypted on your device
+with a key that stays there, so App Lock starts switched off after a restore.</p>
 
 <h2>Data the developer collects: none</h2>
 <p>Sparely has no back-end. There is no server operated by the developer that your data is sent
@@ -50,29 +59,47 @@ to, and no place where it could be stored, sold or shared. Concretely, Sparely c
   <li>no crash-reporting or diagnostics SDK;</li>
   <li>no advertising SDK, ad identifiers and no advertising of any kind;</li>
   <li>no third-party tracking, and no tracking across apps or websites owned by other companies,
-      so Sparely never presents an App Tracking Transparency prompt;</li>
-  <li>no third-party dependencies at all.</li>
+      so on iPhone and iPad Sparely never presents an App Tracking Transparency prompt;</li>
+  <li>no third-party dependencies at all on iPhone and iPad, and on Android only the standard
+      Android and Kotlin libraries.</li>
 </ul>
 <p>This is why Sparely's App Store privacy label is <strong>Data Not Collected</strong>, with
-<strong>Tracking: No</strong>. No financial information, identifiers, contacts, usage data or
-diagnostics are collected, and none are linked to you.</p>
+<strong>Tracking: No</strong>, and why its Google Play Data safety section says no data is
+collected or shared. No financial information, identifiers, contacts, usage data or diagnostics
+are collected, and none are linked to you.</p>
 
 <h2>The one network request Sparely makes</h2>
-<p>When you use more than one currency, Sparely fetches a table of daily exchange rates so it can
-convert between them. It asks <a href="https://www.exchangerate-api.com">ExchangeRate-API</a>
+<p>Sparely fetches a table of daily exchange rates so it can convert between currencies. It asks <a href="https://www.exchangerate-api.com">ExchangeRate-API</a>
 (<code>open.er-api.com</code>) and, if that is unavailable,
 <a href="https://frankfurter.dev">Frankfurter</a> (<code>api.frankfurter.dev</code>), which
 republishes the European Central Bank's daily reference rates.</p>
-<p>These requests carry no personal data: they ask for the public rate table for a base currency
+<p>These requests use HTTPS and carry no personal data: they ask for the public rate table for a base currency
 and nothing else. No entry, amount, account name, identifier or device identifier is sent. As
 with any request to any website, the provider necessarily sees the network address it came from;
 neither provider is used for tracking, and neither receives anything that identifies you or your
 ledger. The rates are cached on device, so the request happens at most once a day.</p>
 
+<h2>Purchases</h2>
+<p>Sparely Premium is sold through the App Store on iPhone and iPad. Apple handles the payment, and
+Sparely only learns whether your subscription is active. The app never sees your payment details.
+Sparely on Android is free and has no purchases.</p>
+
+<h2>When you contact the developer</h2>
+<p>On Android, Send Feedback opens your own email app with a message for you to read and send, so
+nothing leaves your device unless you send it. The developer then receives your email address and
+what you wrote. A bug report also lists the app version, Android version, device model, language
+and region, main currency, number of entries, storage status and short summaries of recent
+crashes. It adds no amounts, notes or account names.</p>
+<p>For messages you send, the data controller is Borislav Borisov, the developer of Sparely, based
+in Bulgaria. The legal basis is legitimate interest: messages are used only to reply to you and to
+fix or improve Sparely, and are kept only as long as that takes. You can ask to see or delete them
+at the address below, and you can complain to the data protection authority where you live.</p>
+
 <h2>Sharing with other people</h2>
-<p>Sparely can let you share an account with someone else using Apple's CloudKit sharing — for
-example, a household budget shared with a partner. Sharing only ever happens because you started
-it, by sending an invitation from inside the app.</p>
+<p>On iPhone and iPad, Sparely can let you share an account with someone else using Apple's
+CloudKit sharing — for example, a household budget shared with a partner. Sharing only ever happens
+because you started it, by sending an invitation from inside the app. Sparely on Android has no
+account sharing.</p>
 <p>When you share, the person who accepts the invitation can see the shared account and the
 entries in it, including their amounts, dates, categories, labels and notes, and — depending on
 the permission you grant — can add, edit or delete entries in it. They cannot see anything you
@@ -93,20 +120,23 @@ it — but you can leave a share you were invited to.</p>
 <p>Deleting the app itself removes the on-device copy. To remove the iCloud copy as well, use
 Delete all data before deleting the app, or remove Sparely's iCloud data in the Settings app under
 your Apple Account.</p>
+<p>On Android, Delete all data clears your device, and the next backup replaces your saved copy.
+Deleting the app removes the on-device copy but not a backup already in your Google account. You
+can delete device backups in Google Drive.</p>
 
 <h2>Children</h2>
 <p>Sparely is not directed at children and collects nothing from anyone, of any age.</p>
 
 <h2>Changes to this policy</h2>
-<p>If a future version of Sparely ever collects anything, this page, the App Store privacy label
-and the privacy text inside the app will be updated together, before that version ships. The date
-at the top of this page tells you when it last changed.</p>
+<p>If a future version of Sparely ever collects anything, this page, the App Store privacy label,
+the Google Play Data safety section and the privacy text inside the app will be updated together,
+before that version ships. The date at the top of this page tells you when it last changed.</p>
 
 <h2>Contact</h2>
-<p>Questions about this policy: <a href="mailto:sparelysupport@icloud.com">sparelysupport@icloud.com</a>.
+<p>Questions about this policy: <a href="mailto:borislavborisov@outlook.com">borislavborisov@outlook.com</a>.
 See also the <a href="support.html">support page</a>.</p>
 
-<footer>Sparely — a personal-finance ledger for iPhone and iPad.</footer>
+<footer>Sparely — a personal-finance ledger for iPhone, iPad and Android.</footer>
 
 </main>
 </body>
